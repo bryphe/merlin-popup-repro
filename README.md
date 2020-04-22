@@ -1,27 +1,14 @@
-[![Build Status](https://bryphe.visualstudio.com/merlin-language-server/_apis/build/status/bryphe.merlin-language-server?branchName=master)](https://bryphe.visualstudio.com/merlin-language-server/_build/latest?definitionId=16?branchName=master)
-
-# merlin-language-server
-### Simple LSP protocol wrapper for [`merlin`](https://github.com/ocaml/merlin), written in [reason](https://reasonml.github.io/)
-
-:warning: Alpha quality
-
-### Overview
-
-`merlin-language-server` is a thin wrapper over the excellent [`merlin`](https://github.com/ocaml/merlin) tooling - implementing the LSP protocol on-top of [`merlin`'s protocol](https://github.com/ocaml/merlin/blob/master/doc/dev/PROTOCOL.md). 
-
-As with `ocaml-language-server`, this is not intended as a replacement for any existing Reason / OCaml tooling, but to make it more accessible across editors.
-
-### Why?
 # NOTES:
 
 - Set MERLIN_LOG environment variable to a file
 - Run `esy x TestPpxParsing.exe`
 
+> The [procmon](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon) tool can be used along with these instructions to query short-lived processes: https://www.winhelponline.com/blog/procmon-track-process-creation-exit-time/
+
 Observations:
-- In some shells, there is no 'flashing window'. But in some cases, I can reproduce it (like running from the Onivim terminal):
-
-
+- In some shells, there is no 'flashing window'. But in some cases, I can reproduce it (like running from the Onivim terminal).
 - Using the proposed fix, there is no flashing window, but there is an error message
+- I do not observe any 'flashing windows' when running via the `ocaml-lsp` server.
 
 ```
 29 items in path, 29 after deduplication
