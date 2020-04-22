@@ -1,0 +1,38 @@
+{
+  "name": "merlin-language-server",
+  "version": "1.0.0",
+  "description": "Reason LSP wrapper around merlin",
+  "license": "MIT",
+  "scripts": {
+    "format": "esy dune build @fmt --auto-promote"
+  },
+  "esy": {
+    "build": "dune build -p merlin-popup-repro",
+    "release": {
+      "releasedBinaries": [
+        "hello"
+      ]
+    },
+    "install": [
+        "esy-installer merlin-popup-repro.install"
+    ]
+  },
+  "dependencies": {
+    "@opam/dune": "*",
+    "@opam/lambda-term": "*",
+    "@opam/lwt": "^4.0.0",
+    "ocaml": "~4.7.0",
+    "@opam/ppx_deriving": "*",
+    "@opam/ppx_pipebang": "*",
+    "@opam/ppx_deriving_yojson": "*",
+    "@opam/ppx_let": "*",
+    "@opam/yojson": "*",
+    "@esy-ocaml/reason": "*",
+    "refmterr": "*",
+    "rench": "*"
+  },
+  "devDependencies": {
+    "@opam/merlin": "*",
+    "ocaml": "~4.7.0"
+  }
+}

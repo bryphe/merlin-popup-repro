@@ -1,0 +1,5 @@
+(library
+  (name Protocol)
+  (public_name merlin-popup-repro.sample)
+  (flags (:standard (-w -39)))
+  (preprocess (pps ppx_let ppx_deriving_yojson ppx_pipebang)))

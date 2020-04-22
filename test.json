@@ -1,0 +1,16 @@
+{
+  "source": "./package.json",
+  "scripts": {
+    "run": "esy '@test' x TestRunner"
+  },
+  "override": {
+      "build": ["dune build -p merlin-language-server,merlin-language-server-test -j4"],
+      "dependencies": {
+        "@reason-native/rely": "^3.2.1"
+      },
+    "install": [
+        "esy-installer merlin-language-server.install",
+        "esy-installer merlin-language-server-test.install"
+    ]
+  }
+}

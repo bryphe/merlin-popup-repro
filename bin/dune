@@ -1,0 +1,7 @@
+(executables
+  (names TestPpxParsing)
+  (public_names TestPpxParsing)
+  (flags (:standard (-w -39)))
+  (package merlin-popup-repro)
+  (libraries merlin-popup-repro.util yojson ppx_deriving_yojson.runtime)
+  (preprocess (pps ppx_let ppx_deriving_yojson)))

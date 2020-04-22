@@ -1,0 +1,6 @@
+(library
+  (name Util)
+  (public_name merlin-popup-repro.util)
+  (flags (:standard (-w -39)))
+  (libraries lambda-term lwt Rench yojson ppx_deriving_yojson.runtime)
+  (preprocess (pps ppx_let ppx_deriving_yojson ppx_pipebang)))

@@ -1,0 +1,5 @@
+29 items in path, 29 after deduplication
+# 27.11 Pparse - apply_rewriter
+running "D:\\merlin-language-server\\_build/default/.ppx/dd492af6ac3d011a895e93e95aa5420a/ppx.exe --as-ppx --cookie \"library-name=\\\"Protocol\\\"\"" from directory "D:\\merlin-language-server\\src\\Protocol"
+# 27.16 Pparse - report_error
+Error while running external preprocessor. Command line: D:\merlin-language-server\_build/default/.ppx/dd492af6ac3d011a895e93e95aa5420a/ppx.exe --as-ppx --cookie "library-name=\"Protocol\"" %merlin_fn_in% %merlin_fn_out% 1>&2
